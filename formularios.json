@@ -2,7 +2,22 @@
   "title": "FORMULÁRIOS E INSTRUÇÕES — BIOMEDICINA UFPR",
   "subtitle": "Central de formulários, procedimentos e acessos acadêmicos",
   "updated": "2026-2",
-  "intro": "Use a pesquisa ou os filtros para localizar rapidamente o formulário ou procedimento necessário. Alguns serviços atualmente são realizados diretamente pelo SIGA ou por unidades centrais da UFPR; nesses casos, o botão leva ao sistema ou à orientação institucional vigente.",
+  "version": "2.0-auditado",
+  "intro": "Use a pesquisa ou os filtros para localizar rapidamente o formulário ou procedimento necessário. Alguns serviços são realizados diretamente pelo SIGA ou por unidades centrais da UFPR; nesses casos, o botão leva ao sistema ou à orientação institucional vigente.",
+  "audit": {
+    "data": "2026-08-26",
+    "criterio": "Links circulares para /biomedicina/formularios/ foram substituídos por arquivos próprios da Coordenação ou por procedimentos institucionais confirmados. Itens de diploma foram reduzidos à Impressão da RVDD.",
+    "statusPermitidos": [
+      "confirmado",
+      "confirmado_anexo",
+      "confirmado_usuario",
+      "precisa_localizar_atualizar"
+    ],
+    "itensRemovidos": [
+      "2ª via de diploma",
+      "Requerimento de 2ª via — Coordenações"
+    ]
+  },
   "forms": [
     {
       "nome": "Ajuste de Matrícula — 2026-2",
@@ -12,18 +27,21 @@
       "acao": "Baixar formulário",
       "tipo": "Formulário",
       "destaque": true,
-      "ativo": true
+      "ativo": true,
+      "statusLink": "confirmado"
     },
     {
       "nome": "Cancelamento de disciplina",
       "categoria": "Matrícula e Vida Acadêmica",
-      "descricao": "O cancelamento regular deve ser solicitado pelo SIGA dentro do prazo do Calendário Acadêmico. Consulte as regras antes de cancelar.",
+      "descricao": "O cancelamento regular deve ser solicitado pelo SIGA dentro do prazo do Calendário Acadêmico. O formulário anexo permanece como documento complementar para situações administrativas específicas.",
       "url": "https://siga.ufpr.br/",
+      "arquivoComplementar": "6-Cancelamento-de-Disciplina.docx",
       "norma": "https://bio.ufpr.br/biomedicina/wp-content/uploads/sites/4/2013/06/cepe3797.pdf",
       "acao": "Acessar SIGA",
       "tipo": "SIGA",
       "destaque": false,
-      "ativo": true
+      "ativo": true,
+      "statusLink": "confirmado"
     },
     {
       "nome": "Equivalência de disciplinas",
@@ -34,17 +52,20 @@
       "acao": "Acessar SIGA",
       "tipo": "SIGA",
       "destaque": true,
-      "ativo": true
+      "ativo": true,
+      "statusLink": "confirmado"
     },
     {
       "nome": "Quebra / dispensa de pré-requisito",
       "categoria": "Matrícula e Vida Acadêmica",
-      "descricao": "Solicitação acadêmica sujeita à análise conforme normas da UFPR e prazos institucionais.",
-      "url": "https://bio.ufpr.br/biomedicina/formularios/",
-      "acao": "Consultar formulário atual",
+      "descricao": "Formulário próprio da Coordenação para solicitação de quebra de pré-requisito, sujeito à análise acadêmica.",
+      "url": "FORMULÁRIO DE PEDIDO DE QUEBRA DE PRÉ REQUISITO 2025.docx",
+      "acao": "Baixar formulário",
       "tipo": "Formulário",
       "destaque": false,
-      "ativo": true
+      "ativo": true,
+      "statusLink": "confirmado_anexo",
+      "origem": "Coordenação do Curso de Biomedicina"
     },
     {
       "nome": "Trancamento de curso",
@@ -55,49 +76,57 @@
       "acao": "Acessar SIGA",
       "tipo": "SIGA",
       "destaque": false,
-      "ativo": true
+      "ativo": true,
+      "statusLink": "confirmado"
     },
     {
       "nome": "Destrancamento de curso",
       "categoria": "Matrícula e Vida Acadêmica",
-      "descricao": "Solicitação de retorno do curso conforme procedimento e prazo definidos pela UFPR.",
-      "url": "https://bio.ufpr.br/biomedicina/formularios/",
-      "acao": "Consultar formulário atual",
-      "tipo": "Formulário",
+      "descricao": "Solicitação de retorno ao curso realizada pelo SIGA, conforme procedimento e prazo definidos pela UFPR.",
+      "url": "https://siga.ufpr.br/",
+      "acao": "Acessar SIGA",
+      "tipo": "SIGA",
       "destaque": false,
-      "ativo": true
+      "ativo": true,
+      "statusLink": "confirmado_usuario"
     },
     {
       "nome": "Solicitações gerais à Coordenação",
       "categoria": "Matrícula e Vida Acadêmica",
-      "descricao": "Requerimento para demandas acadêmicas que não possuam formulário específico.",
-      "url": "https://bio.ufpr.br/biomedicina/formularios/",
-      "acao": "Acessar página oficial",
+      "descricao": "Requerimento genérico para demandas acadêmicas que não possuam formulário específico.",
+      "url": "SOLICITAÇÕES GERAIS.doc",
+      "acao": "Baixar requerimento",
       "tipo": "Requerimento",
       "destaque": false,
-      "ativo": true
+      "ativo": true,
+      "statusLink": "confirmado_anexo",
+      "origem": "Coordenação do Curso de Biomedicina"
     },
     {
       "nome": "Atividades Formativas Complementares",
       "categoria": "Atividades Formativas e Extensão",
       "descricao": "Formulário e orientações para integralização de 120 horas de AFC em pelo menos 2 grupos.",
-      "url": "https://bio.ufpr.br/biomedicina/wp-content/uploads/sites/4/2013/06/Formul%C3%A1rio-de-Atividades-Formativas-Complementares-1.doc",
+      "url": "Formulário-de-Atividades-Formativas-Complementares (1).doc",
       "norma": "https://bio.ufpr.br/biomedicina/wp-content/uploads/sites/4/2022/01/Atividades-Formativas-Complementares.pdf",
       "acao": "Baixar formulário",
       "tipo": "Formulário",
       "destaque": true,
-      "ativo": true
+      "ativo": true,
+      "statusLink": "confirmado_anexo",
+      "origem": "Coordenação do Curso de Biomedicina"
     },
     {
       "nome": "Atividades Curriculares de Extensão — ACE",
       "categoria": "Atividades Formativas e Extensão",
-      "descricao": "Formulário, regulamento e orientações para integralização das 405 horas de extensão.",
-      "url": "https://bio.ufpr.br/biomedicina/formularios/",
+      "descricao": "Formulário para registro e solicitação de integralização das Atividades Curriculares Extensionistas (ACE I a ACE VI).",
+      "url": "formulário-extensão (1)(1).docx",
       "norma": "https://bio.ufpr.br/biomedicina/wp-content/uploads/sites/4/2013/06/REGULAMENTO-EXTENS%C3%83O.pdf",
-      "acao": "Consultar formulário",
+      "acao": "Baixar formulário ACE",
       "tipo": "Formulário",
       "destaque": true,
-      "ativo": true
+      "ativo": true,
+      "statusLink": "confirmado_anexo",
+      "origem": "Coordenação do Curso de Biomedicina"
     },
     {
       "nome": "Exame de Adiantamento de Conhecimento",
@@ -107,7 +136,8 @@
       "acao": "Acessar SIGA",
       "tipo": "SIGA",
       "destaque": false,
-      "ativo": true
+      "ativo": true,
+      "statusLink": "confirmado"
     },
     {
       "nome": "Exame de Aproveitamento de Conhecimento",
@@ -118,29 +148,34 @@
       "acao": "Acessar SIGA",
       "tipo": "SIGA",
       "destaque": false,
-      "ativo": true
+      "ativo": true,
+      "statusLink": "confirmado"
     },
     {
       "nome": "Exercícios domiciliares — tratamento de saúde",
       "categoria": "Saúde e Regimes Especiais",
-      "descricao": "Solicitação de regime de exercícios domiciliares quando compatível com a situação de saúde e a natureza das disciplinas.",
-      "url": "https://bio.ufpr.br/biomedicina/formularios/",
+      "descricao": "Requerimento de regime de exercícios domiciliares por tratamento de saúde, conforme requisitos e prazo aplicáveis.",
+      "url": "EXERCÍCIOS DOMICILIARES PARA TRATAMENTO DE SAÚDE.doc",
       "norma": "https://bio.ufpr.br/biomedicina/wp-content/uploads/sites/4/2013/06/cepe3797.pdf",
-      "acao": "Consultar formulário",
+      "acao": "Baixar requerimento",
       "tipo": "Formulário",
       "destaque": false,
-      "ativo": true
+      "ativo": true,
+      "statusLink": "confirmado_anexo",
+      "origem": "Coordenação do Curso de Biomedicina"
     },
     {
       "nome": "Exercícios domiciliares — gestante",
       "categoria": "Saúde e Regimes Especiais",
-      "descricao": "Solicitação de regime acadêmico especial durante a gestação, conforme a legislação aplicável.",
-      "url": "https://bio.ufpr.br/biomedicina/formularios/",
+      "descricao": "Requerimento de regime acadêmico especial durante a gestação, conforme a legislação aplicável.",
+      "url": "EXERCÍCIOS DOMICILIARES PARA GESTANTE.doc",
       "norma": "https://bio.ufpr.br/biomedicina/wp-content/uploads/sites/4/2013/06/cepe3797.pdf",
-      "acao": "Consultar formulário",
+      "acao": "Baixar requerimento",
       "tipo": "Formulário",
       "destaque": false,
-      "ativo": true
+      "ativo": true,
+      "statusLink": "confirmado_anexo",
+      "origem": "Coordenação do Curso de Biomedicina"
     },
     {
       "nome": "Disciplinas cursadas em intercâmbio / mobilidade",
@@ -150,7 +185,8 @@
       "acao": "Ver orientações",
       "tipo": "Procedimento",
       "destaque": false,
-      "ativo": true
+      "ativo": true,
+      "statusLink": "confirmado"
     },
     {
       "nome": "Matrícula em disciplina eletiva — estudantes UFPR",
@@ -161,7 +197,8 @@
       "acao": "Acessar SIGA",
       "tipo": "SIGA",
       "destaque": true,
-      "ativo": true
+      "ativo": true,
+      "statusLink": "confirmado"
     },
     {
       "nome": "Matrícula em disciplina isolada — comunidade externa",
@@ -171,7 +208,8 @@
       "acao": "Ver procedimento",
       "tipo": "Procedimento",
       "destaque": true,
-      "ativo": true
+      "ativo": true,
+      "statusLink": "confirmado"
     },
     {
       "nome": "Termo de Compromisso / documentação de estágio",
@@ -181,109 +219,119 @@
       "acao": "Formulários de Estágio UFPR",
       "tipo": "Formulários UFPR",
       "destaque": true,
-      "ativo": true
+      "ativo": true,
+      "statusLink": "confirmado"
     },
     {
       "nome": "Solicitação de matrícula em Estágio Supervisionado",
       "categoria": "Estágios",
       "descricao": "Formulário específico do Curso de Biomedicina para matrícula no estágio obrigatório.",
-      "url": "https://bio.ufpr.br/biomedicina/formularios/",
+      "url": "SOLICITAÇÃO DE MATRICULA  - Estágio.doc",
       "procedimento": "https://bio.ufpr.br/biomedicina/estagios/",
-      "acao": "Consultar formulário",
+      "acao": "Baixar formulário",
       "tipo": "Formulário",
       "destaque": true,
-      "ativo": true
+      "ativo": true,
+      "statusLink": "confirmado_anexo",
+      "origem": "Coordenação do Curso de Biomedicina"
     },
     {
-      "nome": "Ficha de Avaliação — local de estágio",
+      "nome": "Ficha de Avaliação — supervisor local de estágio",
       "categoria": "Estágios",
-      "descricao": "Ficha do Curso de Biomedicina destinada à avaliação pelo supervisor do local de estágio.",
-      "url": "https://bio.ufpr.br/biomedicina/formularios/",
-      "acao": "Consultar formulário",
+      "descricao": "Ficha do Curso de Biomedicina destinada à avaliação do estudante pelo supervisor local do estágio.",
+      "url": "FICHA DE AVALIAÇÃO - SUPERVISOR - Estágio.docx",
+      "acao": "Baixar ficha",
       "tipo": "Formulário",
       "destaque": false,
-      "ativo": true
+      "ativo": true,
+      "statusLink": "confirmado_anexo",
+      "origem": "Coordenação do Curso de Biomedicina"
     },
     {
       "nome": "Ficha de Avaliação Final — orientador UFPR",
       "categoria": "Estágios",
-      "descricao": "Documento de avaliação final vinculado ao acompanhamento acadêmico do estágio.",
-      "url": "https://bio.ufpr.br/biomedicina/formularios/",
-      "acao": "Consultar formulário",
+      "descricao": "Documento de avaliação final utilizado pelo professor orientador da UFPR no acompanhamento acadêmico do estágio.",
+      "url": "FICHA DE AVALIAÇÃO FINAL - ORIENTADOR -  Estágio.docx",
+      "acao": "Baixar ficha",
       "tipo": "Formulário",
       "destaque": false,
-      "ativo": true
+      "ativo": true,
+      "statusLink": "confirmado_anexo",
+      "origem": "Coordenação do Curso de Biomedicina"
     },
     {
       "nome": "Relatório Final do Estudante — Estágio",
       "categoria": "Estágios",
-      "descricao": "Modelo específico do Curso de Biomedicina para relatório final do estágio.",
-      "url": "https://bio.ufpr.br/biomedicina/formularios/",
-      "acao": "Consultar formulário",
+      "descricao": "Relatório de estágio a ser preenchido pelo estudante ao final do período de estágio.",
+      "url": "RELATORIO FINAL ESTÁGIO PARA PREENCHIMENTO AO FINAL DO SEMESTRE.doc",
+      "acao": "Baixar relatório",
       "tipo": "Formulário",
       "destaque": false,
-      "ativo": true
+      "ativo": true,
+      "statusLink": "confirmado_anexo",
+      "origem": "Coordenação do Curso de Biomedicina / documento institucional de estágio"
+    },
+    {
+      "nome": "Solicitação de matrícula em Trabalho de Conclusão de Curso",
+      "categoria": "Trabalho de Conclusão de Curso",
+      "descricao": "Formulário para solicitação de matrícula em disciplina de Trabalho de Conclusão de Curso.",
+      "url": "SOLICITAÇÃO DE MATRICULA - TCC.doc",
+      "procedimento": "https://bio.ufpr.br/biomedicina/trabalho-de-conclusao/",
+      "acao": "Baixar formulário",
+      "tipo": "Formulário",
+      "destaque": true,
+      "ativo": true,
+      "statusLink": "confirmado_anexo",
+      "origem": "Coordenação do Curso de Biomedicina"
     },
     {
       "nome": "Declaração Orientador–Chefe — TCC",
       "categoria": "Trabalho de Conclusão de Curso",
       "descricao": "Documento para formalização da orientação do TCC com anuência da Chefia do Departamento.",
-      "url": "https://bio.ufpr.br/biomedicina/wp-content/uploads/sites/4/2025/03/DECLARACAO-ORIENTADOR-CHEFE-atualizada.docx",
+      "url": "DECLARAÇÃO ORIENTADOR-CHEFE  - TCC.docx",
       "procedimento": "https://bio.ufpr.br/biomedicina/trabalho-de-conclusao/",
       "acao": "Baixar declaração",
       "tipo": "Formulário",
       "destaque": true,
-      "ativo": true
+      "ativo": true,
+      "statusLink": "confirmado_anexo",
+      "origem": "Coordenação do Curso de Biomedicina"
     },
     {
       "nome": "Ficha de Avaliação da Banca — BMED019",
       "categoria": "Trabalho de Conclusão de Curso",
-      "descricao": "Ficha utilizada pela banca para avaliação do Trabalho de Conclusão de Curso.",
-      "url": "https://bio.ufpr.br/biomedicina/formularios/",
-      "acao": "Consultar formulário",
+      "descricao": "Ficha utilizada para avaliação do Trabalho de Conclusão de Curso na disciplina BMED019.",
+      "url": "FICHA DE AVALIAÇÃO DO TCC.doc",
+      "acao": "Baixar ficha",
       "tipo": "Formulário",
       "destaque": false,
-      "ativo": true
+      "ativo": true,
+      "statusLink": "confirmado_anexo",
+      "origem": "Coordenação do Curso de Biomedicina"
     },
     {
       "nome": "Declaração da Versão Final — TCC",
       "categoria": "Trabalho de Conclusão de Curso",
-      "descricao": "Declaração relacionada à conferência e entrega da versão final corrigida do TCC.",
-      "url": "https://bio.ufpr.br/biomedicina/formularios/",
-      "acao": "Consultar formulário",
+      "descricao": "Declaração do orientador de que as correções exigidas pela banca foram realizadas e de que a versão final pode ser encaminhada ao Repositório Digital Institucional.",
+      "url": "DECLARAÇÃO VERSÃO FINAL TCC.doc",
+      "acao": "Baixar declaração",
       "tipo": "Formulário",
       "destaque": false,
-      "ativo": true
-    },
-    {
-      "nome": "2ª via de diploma",
-      "categoria": "Diplomas e Documentos",
-      "descricao": "Requerimento para solicitação de segunda via de diploma.",
-      "url": "https://bio.ufpr.br/biomedicina/formularios/",
-      "acao": "Consultar requerimento",
-      "tipo": "Requerimento",
-      "destaque": false,
-      "ativo": true
+      "ativo": true,
+      "statusLink": "confirmado_anexo",
+      "origem": "Coordenação do Curso de Biomedicina"
     },
     {
       "nome": "Impressão da RVDD do Diploma Digital",
       "categoria": "Diplomas e Documentos",
-      "descricao": "Requerimento relacionado à impressão da representação visual do diploma digital.",
+      "descricao": "Orientação/requerimento relacionado à impressão da Representação Visual do Diploma Digital (RVDD).",
       "url": "https://bio.ufpr.br/biomedicina/formularios/",
-      "acao": "Consultar requerimento",
-      "tipo": "Requerimento",
+      "acao": "Consultar orientação",
+      "tipo": "Procedimento",
       "destaque": false,
-      "ativo": true
-    },
-    {
-      "nome": "Requerimento de 2ª via — Coordenações",
-      "categoria": "Diplomas e Documentos",
-      "descricao": "Requerimento de segunda via de documentos acadêmicos disponibilizado pela Coordenação.",
-      "url": "https://bio.ufpr.br/biomedicina/formularios/",
-      "acao": "Consultar requerimento",
-      "tipo": "Requerimento",
-      "destaque": false,
-      "ativo": true
+      "ativo": true,
+      "statusLink": "precisa_localizar_atualizar",
+      "observacaoAuditoria": "Mantido como único item público de diploma, conforme orientação da Coordenação. O destino direto ainda precisa ser confirmado."
     }
   ],
   "links_gerais": [
