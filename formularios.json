@@ -72,6 +72,19 @@
       "linkHabilitado": true
     },
     {
+      "nome": "Solicitação / Autorização para aluna(o) cursar abaixo da carga horária semestral",
+      "categoria": "Matrícula e Vida Acadêmica",
+      "descricao": "Formulário próprio da Coordenação para Autorização para aluna(o) cursar abaixo da carga horária semestral, sujeito à análise acadêmica.",
+      "url": "https://bio.ufpr.br/biomedicina/wp-content/uploads/sites/4/2026/08/AUTORIZACAO-PARA-ALUNAO-CURSAR-ABAIXO-DA-CARGA-HORARIA-MINIMA-SEMESTRAL-3.docx",
+      "acao": "Baixar formulário",
+      "tipo": "Formulário",
+      "destaque": false,
+      "ativo": true,
+      "statusLink": "confirmado_wpcontent",
+      "origem": "Biomedicina/UFPR — wp-content",
+      "linkHabilitado": true
+    },
+    {
       "nome": "Trancamento de curso",
       "categoria": "Matrícula e Vida Acadêmica",
       "descricao": "Solicitação de trancamento conforme os prazos e requisitos do Calendário Acadêmico.",
